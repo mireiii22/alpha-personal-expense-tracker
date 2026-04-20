@@ -1,0 +1,321 @@
+:root {
+  color-scheme: light;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: #111111;
+  background: #F7F7F5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  background: #F7F7F5;
+  color: #111111;
+}
+
+button, input, select {
+  font: inherit;
+}
+
+.page-shell {
+  padding: 32px;
+}
+
+.page-content {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.card-panel {
+  background: #FFFFFF;
+  border: 1px solid #E9E9E7;
+  border-radius: 18px;
+  padding: 28px;
+  margin-bottom: 24px;
+}
+
+.auth-panel {
+  max-width: 500px;
+}
+
+.section-header h1 {
+  margin: 0;
+  font-size: 2rem;
+  line-height: 1.1;
+}
+
+.eyebrow {
+  margin: 0 0 14px;
+  color: #6C6C6C;
+  font-size: 0.9rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.form-stack {
+  display: grid;
+  gap: 16px;
+}
+
+.input-group {
+  display: grid;
+  gap: 8px;
+}
+
+.input-group span {
+  color: #6C6C6C;
+  font-size: 0.95rem;
+}
+
+input, select {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #E9E9E7;
+  border-radius: 12px;
+  background: #FFFFFF;
+  outline: none;
+}
+
+input:focus, select:focus {
+  border-color: #C4C4C4;
+  box-shadow: 0 0 0 4px rgba(221, 221, 219, 0.45);
+}
+
+.primary-button,
+.secondary-button,
+.text-button,
+.new-button,
+.category-button,
+.action-button {
+  border: 1px solid transparent;
+  border-radius: 12px;
+  padding: 12px 18px;
+  cursor: pointer;
+  transition: all 0.18s ease;
+}
+
+.primary-button {
+  background: #111111;
+  color: #FFFFFF;
+}
+
+.primary-button:hover {
+  background: #0a0a0a;
+}
+
+.secondary-button {
+  background: #FFFFFF;
+  color: #111111;
+  border-color: #E9E9E7;
+}
+
+.secondary-button:hover,
+.text-button:hover,
+.new-button:hover,
+.action-button:hover {
+  background: #F2F2F0;
+}
+
+.text-button {
+  background: transparent;
+  color: #111111;
+  border-color: transparent;
+}
+
+.small-button {
+  padding: 8px 12px;
+  font-size: 0.9rem;
+}
+
+.budget-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.new-button {
+  background: #FFFFFF;
+  color: #111111;
+  border-color: #E9E9E7;
+}
+
+.app-shell {
+  display: grid;
+  gap: 24px;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.callout-card {
+  background: #FFFFFF;
+  border: 1px solid #E9E9E7;
+  border-radius: 18px;
+  padding: 24px;
+}
+
+.card-label {
+  margin: 0 0 12px;
+  color: #6C6C6C;
+}
+
+.card-value {
+  font-size: 1.85rem;
+  font-weight: 700;
+}
+
+.database-shell {
+  background: #FFFFFF;
+  border: 1px solid #E9E9E7;
+  border-radius: 18px;
+  padding: 26px;
+}
+
+.database-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.transaction-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.transaction-table th,
+.transaction-table td {
+  padding: 16px 18px;
+  text-align: left;
+  border-bottom: 1px solid #E9E9E7;
+}
+
+.transaction-table thead th {
+  color: #6C6C6C;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.transaction-table tbody tr:hover {
+  background: #F7F7F5;
+}
+
+.category-chip,
+.category-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  min-width: 110px;
+}
+
+.category-chip {
+  font-weight: 600;
+}
+
+.category-chip.food {
+  background: #FFF7E6;
+  color: #9A6F08;
+}
+
+.category-chip.bills {
+  background: #EAF3FF;
+  color: #1557C7;
+}
+
+.category-chip.transport {
+  background: #ECF9F3;
+  color: #0E6D44;
+}
+
+.category-chip.entertainment {
+  background: #F5ECFF;
+  color: #5E2A8A;
+}
+
+.form-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+
+.grid-form {
+  display: grid;
+  gap: 16px;
+}
+
+#transactionFormPanel {
+  margin-top: 24px;
+}
+
+.notification {
+  margin-bottom: 20px;
+  padding: 16px 18px;
+  border-radius: 14px;
+  border: 1px solid transparent;
+  font-weight: 600;
+}
+
+.notification.hidden {
+  display: none;
+}
+
+.notification.success {
+  background: #EEF7EB;
+  border-color: #C7E0C4;
+  color: #176B1B;
+}
+
+.notification.error {
+  background: #FCE9E9;
+  border-color: #F4C2C2;
+  color: #8A1D1D;
+}
+
+.hidden {
+  display: none !important;
+}
+
+@media (max-width: 900px) {
+  .card-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .page-shell {
+    padding: 18px;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .app-header,
+  .database-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
